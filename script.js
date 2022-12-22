@@ -23,4 +23,36 @@ var specanswer =  window.confirm("Use special characters? Choose OK for yes and 
 var pwordchar="";
 var password="";
 
+//create variable to house characters based on prompt entry
+  if(lcaseanswer===true && ucaseanswer!==true && numbanswer !==true && specanswer !==true ) {
+    pwordchar=lowercase
+} else if (lcaseanswer!==true && ucaseanswer===true && numbanswer !==true && specanswer !==true ) {
+  pwordchar=uppercase
+} else if (lcaseanswer!==true && ucaseanswer!==true && numbanswer ===true && specanswer !==true ) {
+  pwordchar=numbers
+} else if (lcaseanswer!==true && ucaseanswer!==true && numbanswer !==true && specanswer ===true ) {
+  pwordchar=special
+} else if (lcaseanswer===true && ucaseanswer===true && numbanswer !==true && specanswer !==true ) {
+  pwordchar=lowercase+uppercase
+}  else if (lcaseanswer===true && ucaseanswer!==true && numbanswer ===true && specanswer !==true ) {
+  pwordchar=lowercase+numbers
+} else if (lcaseanswer===true && ucaseanswer!==true && numbanswer !==true && specanswer ===true ) {
+  pwordchar=lowercase+special
+} else if (lcaseanswer!==true && ucaseanswer===true && numbanswer ===true && specanswer !==true ) {
+  pwordchar=uppercase+numbers  
+} else if (lcaseanswer!==true && ucaseanswer===true && numbanswer !==true && specanswer ===true ) {
+  pwordchar=uppercase+special  
+} else if (lcaseanswer!==true && ucaseanswer!==true && numbanswer ===true && specanswer ===true ) {
+  pwordchar=numbers+special
+} else if (lcaseanswer===true && ucaseanswer===true && numbanswer ===true && specanswer !==true ) {
+  pwordchar=lowercase+uppercase+numbers
+} else if (lcaseanswer===true && ucaseanswer===true && numbanswer !==true && specanswer ===true ) {
+  pwordchar=lowercase+uppercase+special
+} else if (lcaseanswer===true && ucaseanswer!==true && numbanswer ===true && specanswer ===true ) {
+  pwordchar=lowercase+numbers+special
+} else if (lcaseanswer!==true && ucaseanswer===true && numbanswer ===true && specanswer ===true ) {
+  pwordchar=uppercase+numbers+special
+} else if (lcaseanswer===true && ucaseanswer===true && numbanswer ===true && specanswer ===true ) {
+  pwordchar=lowercase+uppercase+numbers+special
+} 
 }
