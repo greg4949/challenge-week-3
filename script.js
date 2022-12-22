@@ -55,4 +55,10 @@ var password="";
 } else if (lcaseanswer===true && ucaseanswer===true && numbanswer ===true && specanswer ===true ) {
   pwordchar=lowercase+uppercase+numbers+special
 } 
+
+for (let i=0; i<pwordlength; i++) {
+  randomnumber=Math.floor(Math.random()*pwordchar.length)
+  password+=pwordchar.substring(randomnumber,randomnumber+1)
+} 
+
 }
