@@ -61,4 +61,6 @@ for (let i=0; i<pwordlength; i++) {
   password+=pwordchar.substring(randomnumber,randomnumber+1)
 } 
 
+document.getElementById("password").innerHTML=password;
+
 }
