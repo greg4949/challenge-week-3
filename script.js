@@ -64,3 +64,5 @@ for (let i=0; i<pwordlength; i++) {
 document.getElementById("password").innerHTML=password;
 
 }
+
+generateBtn.addEventListener("click", generatePassword);
